@@ -1,0 +1,87 @@
+body{
+  display: grid;
+  height: 50vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "aside main" 
+    "section footer" ;
+}
+
+main{
+  display: inline;
+}
+h3 {
+  margin-top: 10%;
+}
+aside {
+  background-color: whitesmoke;
+  min-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: aside;
+}
+main {
+  background-color: rgb(241, 241, 241);
+  justify-content: center;
+  align-content: space-evenly;
+  grid-area: main;
+}
+div#l1{
+  border: solid rgb(120, 199, 129) 2px;
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+}
+
+/* div#l2{
+  border: 4rem solid white;
+  border-radius: 50%;
+} */
+p.description {
+  border-left: 0.2rem solid green;
+  text-size-adjust: 2rem;
+  text-align: left;
+  letter-spacing: 0.2rem;
+  margin-top: 10%;
+  padding-left: 0.5rem;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 6rem;
+
+}
+footer {
+  background-color: rgb(241, 241, 241);
+  font-size: 1.3rem;
+  letter-spacing: 0.3rem;
+  max-height: 6rem;
+  display: flex;
+  justify-content: left;
+  padding-left: 0.2rem;
+  align-items: center;
+  grid-area: footer;
+}
+p#online{
+  justify-content: left;
+  align-self: flex-start;
+}
+a#phone, a#message {
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width:16rem;
+}
+a#phone {
+  background-color: rgb(120, 200, 131);
+}
+a#message {
+  background-color: rgb(106, 180, 136);
+}
+/* .notes{
+  font-size: 0.8rem;
+  font-style: italic;
+} */
